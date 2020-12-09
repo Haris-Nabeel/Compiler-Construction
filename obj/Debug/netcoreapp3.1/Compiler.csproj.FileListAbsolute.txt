@@ -1,0 +1,13 @@
+C:\Users\haris\source\repos\Compiler\bin\Debug\netcoreapp3.1\Compiler.exe
+C:\Users\haris\source\repos\Compiler\bin\Debug\netcoreapp3.1\Compiler.deps.json
+C:\Users\haris\source\repos\Compiler\bin\Debug\netcoreapp3.1\Compiler.runtimeconfig.json
+C:\Users\haris\source\repos\Compiler\bin\Debug\netcoreapp3.1\Compiler.runtimeconfig.dev.json
+C:\Users\haris\source\repos\Compiler\bin\Debug\netcoreapp3.1\Compiler.dll
+C:\Users\haris\source\repos\Compiler\bin\Debug\netcoreapp3.1\Compiler.pdb
+C:\Users\haris\source\repos\Compiler\obj\Debug\netcoreapp3.1\Compiler.csprojAssemblyReference.cache
+C:\Users\haris\source\repos\Compiler\obj\Debug\netcoreapp3.1\Compiler.AssemblyInfoInputs.cache
+C:\Users\haris\source\repos\Compiler\obj\Debug\netcoreapp3.1\Compiler.AssemblyInfo.cs
+C:\Users\haris\source\repos\Compiler\obj\Debug\netcoreapp3.1\Compiler.csproj.CoreCompileInputs.cache
+C:\Users\haris\source\repos\Compiler\obj\Debug\netcoreapp3.1\Compiler.dll
+C:\Users\haris\source\repos\Compiler\obj\Debug\netcoreapp3.1\Compiler.pdb
+C:\Users\haris\source\repos\Compiler\obj\Debug\netcoreapp3.1\Compiler.genruntimeconfig.cache
