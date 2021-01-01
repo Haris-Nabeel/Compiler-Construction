@@ -225,6 +225,10 @@ namespace Compiler
                             }
                             else if (srcCode[i].ToString() == "+" || srcCode[i].ToString() == "-")
                             {
+                                if (Convert.ToChar(srcCode[i+1].ToString()) >= '0' && Convert.ToChar(srcCode[i+1].ToString()) <= '9')
+                                {
+                                    
+                                }
                                 CP = "PM";
                             }
                             else if (srcCode[i].ToString() == "*" || srcCode[i].ToString() == "/" || srcCode[i].ToString() == "%")
@@ -246,8 +250,35 @@ namespace Compiler
                     {
                         if (IsDigitsOnly())
                         {
-                            
-                        }   
+                            if ((Convert.ToChar(srcCode[i + 1]) >= 'a' && Convert.ToChar(srcCode[i + 1]) <= 'z') || (Convert.ToChar(srcCode[i + 1]) >= 'A' && Convert.ToChar(srcCode[i + 1]) <= 'Z'))
+                            {
+                                makeTokenWhenTempFull();
+                                temp = temp+srcCode[i].ToString();
+                                makeTokenWhenTempFull();
+                            }
+                            else
+                            {
+                                temp = temp + srcCode[i].ToString();
+
+                            }
+                        }
+                        else
+                        {
+                            makeTokenWhenTempFull();
+                            if((Convert.ToChar( srcCode[i+1])>='a' && Convert.ToChar(srcCode[i + 1]) <= 'z') || (Convert.ToChar(srcCode[i + 1]) >= 'A' && Convert.ToChar(srcCode[i + 1]) <= 'Z'))
+                            {
+
+                                
+                                temp = srcCode[i].ToString();
+                                makeTokenWhenTempFull();
+
+                            }
+                            else
+                            {
+                                temp = srcCode[i].ToString();
+                            }
+    
+                        }
                     }
                     
                    
@@ -261,6 +292,8 @@ namespace Compiler
                 
             }
             makeTokenWhenTempFull();
+            Tokens t = new Tokens();
+            t.classify();
             writeTokens();
         }
 

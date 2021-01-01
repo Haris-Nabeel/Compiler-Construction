@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Text.RegularExpressions;
 
 namespace Compiler
 {
@@ -11,10 +10,10 @@ namespace Compiler
             string fileContent = System.IO.File.ReadAllText(@"C:\Users\haris\Desktop\test.txt");
             WordBreaker wb = new WordBreaker();
             wb.breakWords(fileContent);
-            string pattern = @"^$";
-            Regex obj = new Regex(pattern);
-            string data = "_";
-            Console.WriteLine(obj.IsMatch(WordBreaker.lexems[0].VP).ToString());
+            //string pattern = @"^";
+            //Regex obj = new Regex(pattern);
+            //string data = "3.22";
+            //Console.WriteLine(obj.IsMatch(WordBreaker.lexems[0].VP).ToString());
           //  string s = "/*haris*/";
            // string s = "haris-_`~!@#$%^&*()_+}{:><.,][/?|";
             //Console.WriteLine(wb.lexems.Count);
